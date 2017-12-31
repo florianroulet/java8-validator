@@ -4,7 +4,19 @@
 	<groupId>tuturself</groupId>
 	<artifactId>tuturself</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Java8Validator</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>Java8Validator</name>
 	<description>Java8Validator</description>
 
 	<dependencies>
